@@ -54,6 +54,10 @@ we are using is formatted in an Unsigned 16-bit integer (0x21) with the
 payload being in 1/10th of a second. In this case the payload ({1400})
 translates to 2 seconds.
 
+Each attribute possesses a specific data type. The corresponding value for
+this data type can be found in table 2.16 of the
+`ZigBee Cluster Library <http://www.zigbee.org/download/standards-zigbee-cluster-library/>`__.
+
 .. note:: How does a payload of 1400 translate to 2 seconds? The value 1400 is actually a little endian hex string. It translates into an integer value of 0x0014, which is decimal value 20. Finally, 20 * 1/10 of a second equals 2 seconds.
 
 +-------------------------------+-----------------------------+

@@ -94,7 +94,7 @@ The "switch" attribute specifies two possible values - "on" and "off". We define
 
 When the switch is off, and the user presses on the tile on their mobile device, we want to turn the switch on. We specify this action using the ``action`` parameter. 
 
-The value of the ``action`` parameter should be the name of the command to invoke. The convention is to prefix the command name with the capability, so in the example above we have "switch.on".
+The value of the ``action`` parameter should be the name of the command to invoke. The convention is to prefix the command name with the capability, so in the example above we have "switch.on". Custom commands not related to a capability may also be called as an action, for example ``myCommand``, provided that a corresponding ``command`` declaration is present in the description metadata. In this case, use the ``action: "myCommand"`` syntax.
 
 State Selection
 ~~~~~~~~~~~~~~~
